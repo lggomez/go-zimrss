@@ -5,7 +5,7 @@ RSS feed generator for zim notebooks
 
 It generates a complete RSS feed file, based on the input notebook path and parameters given to the program:
 
-'''xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Luis GG - Tales and Notes</title>
@@ -36,7 +36,7 @@ It generates a complete RSS feed file, based on the input notebook path and para
     </item>
   </channel>
 </rss>
-'''
+```
 
 It currently lacks descriptions and content (as zim does not handle these as metadata) but once the feed is generated, it can be edited to include these fields if needed
 
