@@ -47,19 +47,20 @@ Dependencies: go 1.15 or later
 Be done in 3 steps
 
 #### 1. Clone this project
-'''shell
+```shell
 git clone git@github.com:lggomez/go-zimrss.git && cd go-zimrss
-'''
+```
 
 #### 2. Build
-'''shell
+```shell
 cd main && go build
-'''
+```
 
 #### 3. Execute
 Example based on my personal site:
-'''shell
-./main -n /home/razael/DEV/lggomez.wiki.zim/Site -t "Luis GG - Tales and Notes" -l "https://luisgg.me/#index" -d "Personal notes and posts on software development, technology and miscellaneous" -a "Luis Gabriel Gomez" -e "example@gmail.com"
-'''
 
-This will generate the desired 'rss.xml' file on the current directory
+```shell
+./main -n /home/razael/DEV/lggomez.wiki.zim/Site -t "Luis GG - Tales and Notes" -l "https://luisgg.me/#index" -d "Personal notes and posts on software development, technology and miscellaneous" -a "Luis Gabriel Gomez" -e "example@gmail.com"
+```
+
+This will generate the desired `rss.xml` file on the current directory
