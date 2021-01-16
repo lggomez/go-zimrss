@@ -115,6 +115,7 @@ func traverseAndParsePageMetadata(rootPath string, notebookPath string) zim.Page
 		}
 
 		if !info.IsDir() {
+			// TODO: Detect and ignore empty pages (with empty content starting from line 7)
 			pageMetadata, err := zim.ParsePage(path, info)
 			if err != nil {
 				return err
