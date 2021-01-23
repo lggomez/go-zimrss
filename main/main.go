@@ -87,7 +87,7 @@ func createRSSFeed(pages zim.PageMetadataByCreationDate, rootPath string, zimNot
 		items = append(items, &feeds.Item{
 			Title: p.Title,
 			Link:  &feeds.Link{Href: pageLink},
-			//Description: ,
+			//Description: , TODO: no description available from page so this will be filled manually on generated file
 			Author:  &feeds.Author{Name: commandlineFlags.AuthorName, Email: commandlineFlags.AuthorEmail},
 			Created: p.CreationDate,
 		})
@@ -115,7 +115,7 @@ func traverseAndParsePageMetadata(rootPath string, notebookPath string) zim.Page
 		}
 
 		if !info.IsDir() {
-			// TODO: Detect and ignore empty pages (with empty content starting from line 7)
+			// TODO: Detect and ignore empty pages? (with empty content starting from line 7)
 			pageMetadata, err := zim.ParsePage(path, info)
 			if err != nil {
 				return err
