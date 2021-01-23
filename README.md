@@ -64,3 +64,35 @@ Example based on my personal site:
 ```
 
 This will generate the desired `rss.xml` file on the current directory
+
+### Commandline parameters
+
+```shell
+Usage:
+  main [OPTIONS]
+
+Application Options:
+  -n, --notebook=    Zim notebook path
+  -t, --title=       Feed title
+  -l, --link=        Feed site link
+  -d, --description= Feed site description
+  -a, --authorname=  Author name
+  -e, --authoremail= Author email
+
+Help Options:
+  -h, --help         Show this help message
+
+2021/01/23 17:17:12 Usage:
+  main [OPTIONS]
+
+Application Options:
+  -n, --notebook=    Zim notebook path
+  -t, --title=       Feed title
+  -l, --link=        Feed site link
+  -d, --description= Feed site description
+  -a, --authorname=  Author name
+  -e, --authoremail= Author email
+
+Help Options:
+  -h, --help         Show this help message
+```
